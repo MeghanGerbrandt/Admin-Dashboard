@@ -6,24 +6,63 @@ body {
     width: 100vw;
     height: 100vh;
 }
-
+li {
+    list-style-type: none;
+}
 .container {
     display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 6fr ;
+    grid-template-columns: 1fr 6fr;
 }
 
 .header-container {
     border: 1px solid blue;
     grid-column: 2 / 3; 
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
 }
 .top-header-container {
     border: 1px solid black;
-    margin: 10px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    
+}
+.search {
+    justify-self: start;
+    padding-left: 30px;
+    align-self: center;
+}
+
+.user-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 3 / 3;
+    padding-right: 30px;
+    align-items: center;
 }
 .bottom-header-container {
     border: 1px solid black;
-    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.welcome {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    justify-content: start;
+    align-self: center;
+    padding-left: 30px;
+}
+#welcome-avatar {
+    align-self: center
+}
+.welcome-msg {
+    display: grid;
+    justify-content: start;
+}
+.btn-grp {
+    grid-column: 3 / 3;
+    align-self: center;
+    padding-right: 30px;
 }
 
 .sidebar-container {
@@ -48,7 +87,6 @@ body {
     align-items: start;
 }
 .side-nav {
-    list-style-type: none;
     border: 1px solid blue; 
     padding: 0;
 }
@@ -65,25 +103,40 @@ body {
 }
 .project-container {
     border: 1px solid red;
+    padding: 20px;
 }
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
+    grid-gap: 20px;
 }
 .card {
     border: 1px solid green;
-    margin: 10px;  
-    
+    padding: 20px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+.card-btn {
+    display: grid;
+    border: 1px solid red;
+}
+.card-pic {
+    grid-row:  3/ 3;
+    justify-self: end; 
+    align-self: end;
+   
 }
 .right-container {
     border: 1px solid blue;
     display: grid;
-    
+
 }
 .right-card {
     border: 1px solid orange;
-    margin: 10px;
+   
+
 }
 
   
