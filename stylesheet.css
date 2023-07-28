@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding 0;
+    padding: 0;
 }
 :root {
     font-family: 'Roboto', sans-serif;
@@ -23,14 +23,12 @@ li {
 }
 
 .header-container {
-    border: 1px solid blue;
     grid-column: 2 / 3; 
     display: grid;
     grid-template-rows: 1fr 1fr;
     
 }
 .top-header-container {
-    border: 1px solid black;
     display: grid;
     grid-template-columns: 2fr 3fr;  
 }
@@ -38,8 +36,24 @@ li {
     justify-self: start;
     padding-left: 30px;
     align-self: center;
+    display: flex;
+    gap: 10px;
 }
-
+.search-img {
+    border: none;
+    height: 25px;
+    width: 25px;
+    background-color:  #eef2ff;
+}
+.bell-img {
+    height: 25px;
+    width: 25px;
+}
+.search-input {
+    border: none;
+    border-radius: 20px;
+    padding: 8px 80px 8px 20px;
+}
 .user-info {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -48,7 +62,6 @@ li {
     align-items: center;
 }
 .bottom-header-container {
-    border: 1px solid black;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -88,7 +101,6 @@ li {
 }
 
 .sidebar-container {
-    border: 1px solid black;
     grid-row: 1 / 3; 
     display: grid;  
     grid-template-rows: 100px 275px 150px;
@@ -102,7 +114,14 @@ li {
 #dash-img {
     height: 40px;
     width: 40px;
-    
+    background-color: #eef2ff;
+    border-radius: 10%;    
+}
+.nav-img {
+    height: 25px;
+    width: 25px;
+    background-color: #eef2ff;
+    border-radius: 10%;  
 }
 .sidebar-title {
     display: grid;
@@ -112,7 +131,6 @@ li {
     align-items: start;
 }
 .side-nav {
-    border: 1px solid blue; 
     padding: 0;
 }
 .nav-link {
@@ -128,7 +146,6 @@ li {
     align-self: start;
 }
 .project-container {
-    border: 1px solid red;
     padding: 20px;
 }
 .card-container {
@@ -147,16 +164,16 @@ li {
 }
 .card-btn {
     display: grid;
-    border: 1px solid red;
 }
 .card-pic {
     grid-row:  3/ 3;
     justify-self: end; 
     align-self: end;
+    height: 25px;
+    width: 25px;
    
 }
 .right-container {
-    border: 1px solid blue;
     display: grid;
     grid-template-columns: 1fr;
     padding: 20px;
@@ -164,7 +181,7 @@ li {
     justify-self: center;
 }
 .right-card {
-    border: 1px solid orange;
+    border-radius: 10px;
     padding: 20px;
     height: 250px;
     max-width: 300px;
@@ -173,8 +190,8 @@ li {
     overflow: auto;
 }
 .announcement {
-  border-bottom: 1px solid blue;
-  padding: 5px;
+  border-bottom: 1px solid #312e81;
+  padding-top: 20px;
 }
 .container-title {
     padding: 10px;
@@ -185,7 +202,6 @@ li {
 .trending-item {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    border: 1px solid blue;
     padding: 10px;
 }
 .name {
@@ -195,6 +211,5 @@ li {
 }
 .avatar {
     align-self: center;
-    border: 1px solid orange;
 }
   
