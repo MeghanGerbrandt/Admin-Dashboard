@@ -26,11 +26,13 @@ li {
     grid-column: 2 / 3; 
     display: grid;
     grid-template-rows: 1fr 1fr;
+    padding: 10px;
     
 }
 .top-header-container {
     display: grid;
     grid-template-columns: 2fr 3fr;  
+    
 }
 .search {
     justify-self: start;
@@ -56,10 +58,11 @@ li {
 }
 .user-info {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column: 3 / 3;
+    grid-template-columns: 50px 60px 150px;  
+    grid-gap: 10px;
     padding-right: 30px;
     align-items: center;
+    justify-self: end;
 }
 .bottom-header-container {
     display: grid;
@@ -74,6 +77,11 @@ li {
 }
 #welcome-avatar {
     align-self: center
+}
+#welcome-avatar, .header-avatar, .avatar {
+    background-color: orange;
+    padding: 5px;
+    border-radius: 50%;
 }
 .welcome-msg {
     display: grid;
@@ -92,12 +100,13 @@ li {
     border-radius: 20px;
     color: white;
     border: none;
-    background-color: #312e81;
+    background-color: #4338ca;
+    
     font-weight: bold;
     
 }
 .header-btns:hover {
-    background-color: #4f46e5;
+    background-color: #312e81;
 }
 
 .sidebar-container {
@@ -106,9 +115,9 @@ li {
     grid-template-rows: 100px 275px 150px;
     grid-template-columns: 1fr;
     grid-gap: 10px;   
-    background-color: #312e81;
+    background-color: #4338ca;
     color: white;   
-    font-weight: bold;
+    font-weight: bold;s
    
 }
 #dash-img {
@@ -153,14 +162,18 @@ li {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
 }
-.card {
+.card  {
     border-left: 10px solid #1e1b4b;
     border-radius: 10px;
     padding: 20px;
     height: 250px;
     display: grid;
     grid-template-columns: 1fr;
-
+    text-decoration: none;
+    color: black;
+}
+.card:hover {
+    background-color: #c7d2fe;
 }
 .card-btn {
     display: grid;
@@ -183,7 +196,7 @@ li {
 .right-card {
     border-radius: 10px;
     padding: 20px;
-    height: 250px;
+    height: 315px;
     max-width: 300px;
     display: grid;
     grid-template-columns: 1fr;
@@ -212,4 +225,12 @@ li {
 .avatar {
     align-self: center;
 }
-  
+#santa {
+    background-color: green;
+} 
+#mickey {
+    background-color: lightskyblue;
+}
+#barbie {
+    background-color: hotpink;
+}
